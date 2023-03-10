@@ -52,12 +52,14 @@ const Compare = () => {
   }
 
   return (
-    <div className="bg-blue-100 h-screen">
+    <div className="bg-blue-400 h-screen overflow-y-hidden">
       <Navbar />
       <div className="absolute left-1/2 top-40 -translate-x-1/2 bg-blue-300 p-20 rounded-lg">
         <div className="flex flex-col">
-          <h1 className="text-center text-2xl">Today's Day: {day}</h1>
-          <h1 className="text-center text-2xl">Your Location:</h1>
+          <h1 className="text-center text-5xl font-extrabold">
+            Today's Day: {day}
+          </h1>
+          <h1 className="text-center  text-4xl ">Your Location:</h1>
           <div className="mt-10 mb-10">
             <WeatherCard temp={temp} city={city} />
           </div>
@@ -71,6 +73,7 @@ const Compare = () => {
                 onChange={(e) => {
                   setComparedCity(e.target.value)
                   setDisplayError("")
+                  setDisplayTemp("")
                 }}
               />
               <button className="bg-yellow-300 p-3 transition delay-150 ease-in hover:bg-blue-400 hover:text-white  text-black rounded-full">
