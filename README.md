@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, reinstall node_modules using 
+First, reinstall node_modules using:
 
 ```bash
 yarn 
