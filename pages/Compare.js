@@ -65,7 +65,14 @@ const Compare = () => {
           </div>
           <div className=" flex mb-5 justify-center">
             <h1 className="text-center text-2xl">Compare Cities:</h1>
-            <form onSubmit={getWeather}>
+            <form
+              onSubmit={getWeather}
+              onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                  getWeather(e)
+                }
+              }}
+            >
               <input
                 type="text"
                 className="border border-black p-3 mx-5 ml-16"
