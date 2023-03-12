@@ -7,7 +7,7 @@ const GlobalState = (props) => {
   const [maxTemp, setMaxTemp] = useState()
   const [minTemp, setMinTemp] = useState()
   const city = "Chennai"
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=9cea11792033d87ab898b1ed61c17d8c`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=9cea11792033d87ab898b1ed61c17d8c`
   useEffect(() => {
     const getWeather = async () => {
       const resp = await axios.get(url)

@@ -11,7 +11,7 @@ const Compare = () => {
   const [displayTemp, setDisplayTemp] = useState()
   const [comparedCity, setComparedCity] = useState("")
   const [displayError, setDisplayError] = useState("")
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${comparedCity}&units=metric&appid=9cea11792033d87ab898b1ed61c17d8c`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${comparedCity}&units=metric&appid=9cea11792033d87ab898b1ed61c17d8c`
 
   const getWeather = async (e) => {
     // * Prevents refresh
