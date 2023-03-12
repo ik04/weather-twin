@@ -46,7 +46,7 @@ const Compare = () => {
     case 6:
       day = "Saturday"
       break
-    case 7:
+    case 0:
       day = "Sunday"
       break
   }
@@ -63,7 +63,7 @@ const Compare = () => {
           <div className="mt-10 mb-10">
             <WeatherCard temp={temp} city={city} />
           </div>
-          <div className=" flex mb-5 justify-center">
+          <div className="flex-col mb-5 justify-center">
             <h1 className="text-center text-2xl">Compare Cities:</h1>
             <form
               onSubmit={getWeather}
